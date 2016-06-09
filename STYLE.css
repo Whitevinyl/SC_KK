@@ -1,0 +1,593 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.temp-bg {
+    background-color: #fffff7 !important;
+}
+
+/*
+-------------------------------------------------------------------------------------------
+  GENERIC STYLES
+-------------------------------------------------------------------------------------------
+*/
+
+#sc-library h3 {
+    text-transform: uppercase;
+    font: 700 12px 'Karla', sans-serif;
+    line-height: 20px;
+    letter-spacing: 1px;
+    color: #111111;
+    margin: 40px 0 0 0;
+    padding: 0;
+}
+
+.sc-roll {
+    -webkit-transition: color 0.4s;
+    transition: color 0.4s;
+}
+
+.sc-roll:hover {
+    cursor: pointer;
+    color: #52c9cd;
+}
+
+.sc-inactive {
+    /*opacity: 0.4;*/
+    color: #ffffff !important;
+}
+
+.sc-text-track {
+    font: 600 14px 'Open Sans', sans-serif;
+    color: #000000;
+}
+
+.sc-text-number {
+    font: 400 14px 'Open Sans', sans-serif;
+    color: #000000;
+}
+
+.sc-svg {
+    width: 20px;
+    height: 20px;
+}
+
+.sc-stripe-4 {
+    background-image: url("assets/stripe-5.svg");
+    background-repeat: repeat;
+}
+
+.sc-button {
+    height: 20px;
+    padding: 8px 33px 8px 33px;
+    display: inline-block;
+
+    text-transform: uppercase;
+    font: 400 11px 'Open Sans', sans-serif;
+    line-height: 20px;
+    letter-spacing: 2px;
+    color: #111111;
+
+    border: 2px solid #575757;
+    background-color: transparent;
+
+    -webkit-transition: background-color, color, border 0.4s;
+    transition: background-color, color, border 0.4s;
+}
+
+.sc-button:hover {
+    cursor: pointer;
+    background-color: #52c9cd;
+    border-color: #52c9cd;
+    color: #fff;
+}
+
+/*
+-------------------------------------------------------------------------------------------
+  STRUCTURE
+-------------------------------------------------------------------------------------------
+*/
+
+#sc-library {
+    position: relative;
+}
+
+#sc-filters {
+    min-height: 20px;
+}
+
+#sc-results {
+    position: relative;
+    width: 100%;
+    margin: 15px 0 80px 0;
+    min-height: 60px;
+    border-bottom: 2px solid #e0e0e1;
+}
+
+.sc-wrap {
+    vertical-align: top;
+    display: inline-block;
+    padding: 0 2% 0 2%;
+}
+
+.sc-single {
+    width: 29.3%;
+}
+
+.sc-double {
+    width: 62.3%;
+}
+
+/*
+-------------------------------------------------------------------------------------------
+  FILTERS SECTION
+-------------------------------------------------------------------------------------------
+*/
+
+/* Select Style */
+#sc-filter-style {
+    margin-top: 5px;
+    font: 400 23px 'Lora', serif;
+    line-height: 30px;
+    color: #000000;
+    overflow: hidden;
+}
+
+#sc-filter-style-inner {
+    margin-left: -11px;
+}
+
+#sc-filter-style-inner div {
+    padding-left: 10px;
+    margin: 8px 10px 12px 0;
+    border-left: 2px solid #e0e0e1;
+    display: inline-block;
+    height: 16px;
+}
+
+#sc-filter-style span {
+    display: inline-block;
+    margin: -8px 0 4px 0;
+}
+
+.sc-filter-style-underline {
+    border-bottom: 2px solid;
+    margin-bottom: 0 !important;
+}
+
+
+/* Sliders */
+#sc-filter-tempo {
+
+}
+
+.sc-range-slider {
+    height: 40px;
+    position: relative;
+    margin-top: 5px;
+}
+
+.sc-range-track {
+    height: 19px;
+    border-bottom: 2px solid #575757;
+    margin: 0 5px 0 5px;
+}
+
+.sc-range-color {
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 38px;
+    /*background-color: #2735b9;*/
+    padding:1px 0 1px 0;
+}
+
+.sc-slider-label {
+    position: absolute;
+    top: 45px;
+    width: 400px;
+    height: 20px;
+    font: 400 11px 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    color: #000000;
+    text-align: center;
+}
+
+.sc-slider-handle {
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    top: 0;
+    color: #000000;
+    -webkit-transition: color 0.4s;
+    transition: color 0.4s;
+}
+
+.sc-slider-handle:hover {
+    cursor: pointer;
+    color: #52c9cd;
+}
+
+.sc-slider SVG {
+    width: 40px;
+    height: 40px;
+}
+
+/* Keywords */
+#sc-filter-search {
+    margin-top: 5px;
+    border-bottom: 2px dashed #575757;
+    font: 400 23px 'Lora', serif;
+    line-height: 30px;
+    color: #000000;
+}
+
+#sc-library form{
+    width: inherit;
+}
+
+#sc-library input {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    height: 40px;
+    font: inherit;
+    line-height: inherit;
+    color: inherit;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    padding: 0 !important;
+    margin: 0;
+    background-color: transparent;
+}
+
+
+/* Reset Button */
+.sc-button-reset {
+    margin: 40px 0 0 0;
+}
+
+
+/*
+-------------------------------------------------------------------------------------------
+  TRACKS SECTION
+-------------------------------------------------------------------------------------------
+*/
+
+#sc-result-count {
+    position: absolute;
+    right: 0;
+    top: -35px;
+    text-align: right !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font: 400 11px 'Open Sans', sans-serif;
+    line-height: 20px;
+    color: #111111;
+}
+
+#sc-results-none {
+    position: absolute;
+    height: 30px;
+    width: 100%;
+    padding: 15px 0 15px 0;
+    border-top: 2px solid #e0e0e1;
+    font: 400 23px 'Lora', serif;
+    line-height: 30px;
+    color: #000000;
+}
+
+.sc-track-container {
+    opacity: 0;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+    position: relative;
+    height: 60px;
+    border-top: 2px solid #e0e0e1;
+}
+
+.sc-track-button {
+    display: inline-block;
+    padding: 20px;
+    margin-left: -20px;
+    width: 20px;
+    height: 20px;
+    color: #000000;
+}
+
+.sc-track-title {
+    vertical-align: top;
+    display: inline-block;
+    padding: 20px 0 20px 0;
+    margin-left: 10px;
+    line-height: 20px;
+    width: 65%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.sc-track-duration {
+    position: absolute;
+    right: 70px;
+    vertical-align: top;
+    display: inline-block;
+    padding: 20px 0 20px 0;
+    line-height: 20px;
+    width: 10%;
+}
+.sc-track-add {
+    position: absolute;
+    right: 10px;
+    vertical-align: top;
+    display: inline-block;
+    padding: 20px;
+    height: 20px;
+    width: 20px;
+    color: #000000;
+}
+
+/*
+-------------------------------------------------------------------------------------------
+  PLAYER
+-------------------------------------------------------------------------------------------
+*/
+
+
+#sc-player {
+    position: fixed;
+    bottom: -80px;
+    height: 80px;
+    width: 100%;
+    background-color: #e0e0e1;
+}
+
+#sc-player-icon {
+
+}
+
+#sc-player-controls {
+    display: inline-block;
+    margin-top: 25px;
+    margin-left: 2%;
+}
+
+.sc-player-control {
+    color: #000000;
+    height: 30px;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+    line-height: 30px;
+    position: relative;
+}
+
+#sc-player-volume-slider {
+    position: absolute;
+    left: -10px;
+    bottom: -200px;
+    width: 50px;
+    height: 120px;
+    background-color: #e0e0e1;
+}
+.sc-volume-track {
+    height: 95px;
+    width: 25px;
+    border-right: 2px solid #575757;
+    margin-top: 25px;
+}
+
+.sc-volume-handle {
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    display: block;
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    color: #000000;
+    -webkit-transition: color 0.4s;
+    transition: color 0.4s;
+}
+
+.sc-volume-handle:hover {
+    cursor: pointer;
+    color: #52c9cd;
+}
+
+#sc-player-volume-slider-handle SVG {
+    width: 20px;
+    height: 20px;
+}
+
+#sc-player-title {
+    padding: 0 30px 0 30px;
+}
+
+#sc-player-time {
+    width: 30px;
+    padding: 0 5px 0 5px;
+}
+
+#sc-playlist-display {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    margin-top: 25px;
+    margin-right: 2%;
+}
+
+.sc-playlist-display {
+    color: #000000;
+
+    vertical-align: middle;
+
+    display: inline-block;
+    margin-left: 10px;
+    position: relative;
+}
+
+#sc-playlist-status {
+    line-height: 30px;
+    height: 30px;
+}
+
+#sc-playlist-button {
+    margin-top: -5px;
+}
+
+/*
+-------------------------------------------------------------------------------------------
+  PLAYLIST
+-------------------------------------------------------------------------------------------
+*/
+
+
+#sc-playlist {
+    position: fixed;
+    bottom: 80px;
+    right: -100%;
+    width: 40%;
+    background-color: #e0e0e1;
+    padding: 2% 2% 0 2%;
+}
+
+#sc-playlist h3 {
+    margin-top: 0;
+}
+
+#sc-playlist-scroller {
+    max-width: 100%;
+    padding-right: 3%;
+    max-height: 262px;
+    margin-top: 15px;
+    overflow-y: auto;
+    overflow-x: visible;
+}
+
+#sc-playlist-container {
+    color: #000000;
+    position: relative;
+    width: 100%;
+    border-top: 2px solid #CCCCCC;
+}
+
+
+
+.sc-track-container2 {
+    position: relative;
+    height: 50px;
+    border-bottom: 2px solid #CCCCCC;
+}
+
+.sc-track-button2 {
+    display: inline-block;
+    padding: 15px;
+    margin-left: -15px;
+    width: 20px;
+    height: 20px;
+    color: #000000;
+}
+
+.sc-track-title2 {
+    vertical-align: top;
+    display: inline-block;
+    padding: 15px 0 15px 0;
+    margin-left: 10px;
+    line-height: 20px;
+    width: 50%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.sc-track-add2 {
+    position: absolute;
+    right: 5px;
+    vertical-align: top;
+    display: inline-block;
+    padding: 15px 10px 15px 10px;
+    height: 20px;
+    width: 20px;
+    color: #000000;
+}
+
+.sc-playlist-pos {
+    position: absolute;
+    vertical-align: top;
+    display: inline-block;
+    padding: 15px 10px 15px 10px;
+    height: 20px;
+    width: 20px;
+    color: #000000;
+}
+
+.sc-playlist-up {
+    right: 90px;
+}
+
+.sc-playlist-down {
+    right: 50px;
+}
+
+/*
+-------------------------------------------------------------------------------------------
+  ANIMATION KEYFRAMES
+-------------------------------------------------------------------------------------------
+*/
+
+
+@keyframes sc-fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes sc-fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes sc-fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes sc-fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes sc-fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+/*
+-------------------------------------------------------------------------------------------
+  RESPONSIVE
+-------------------------------------------------------------------------------------------
+*/
+
+@media (max-width:800px) {
+    .sc-wrap, .sc-single, .sc-double {
+        width: 96%;
+    }
+    .sc-track-title {
+        width: 60%;
+        margin-left: 0;
+    }
+    .sc-text-track, .sc-text-number {
+        font-size: 11px;
+    }
+    .sc-track-duration {
+        right: 50px;
+    }
+    .sc-track-add {
+        right: 0;
+    }
+}

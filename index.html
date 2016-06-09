@@ -1,0 +1,230 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+
+    <title>DEFAULT</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="robots" content="noodp,noydir" />
+    <meta name="keywords" content=""  />
+
+    <!--<script type="text/javascript" src="js/lib/tween.min.js"></script>-->
+    <!--<script type="text/javascript" src="js/lib/Tone.min.js"></script>-->
+    <!--<script type="text/javascript" src="js/lib/three.min.js"></script>-->
+    <!--<script type="text/javascript" src="js/lib/PixelPalette.js"></script>-->
+
+    <!--
+    <script type="text/javascript" src="js/_MAIN.js"></script>
+    <script type="text/javascript" src="js/_METRICS.js"></script>
+    <script type="text/javascript" src="js/_INTERACTION.js"></script>
+    <script type="text/javascript" src="js/_DRAW.js"></script>
+    <script type="text/javascript" src="js/_TWEENS.js"></script>
+    <script type="text/javascript" src="js/_FONTS.js"></script>-->
+
+    <link href="STYLE.css" rel="stylesheet" type="text/css" />
+    <link href="_style.css" rel="stylesheet" type="text/css" />
+
+    <link href='https://fonts.googleapis.com/css?family=Karla:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+
+    <!--<script src="js/lib/jquery-2.2.3.min.js"></script>
+    <script src="js/lib/rangeslider.min.js"></script>
+    <script>
+        // Initialize a new plugin instance for all
+        // e.g. $('input[type="range"]') elements.
+        $('input[type="range"]').rangeslider();
+
+        // Destroy all plugin instances created from the
+        // e.g. $('input[type="range"]') elements.
+        $('input[type="range"]').rangeslider('destroy');
+
+        // Update all rangeslider instances for all
+        // e.g. $('input[type="range"]') elements.
+        // Usefull if you changed some attributes e.g. `min` or `max` etc.
+        $('input[type="range"]').rangeslider('update', true);
+    </script>-->
+
+    <script type="text/javascript" src="js/lib/tween.min.js"></script>
+    <script type="text/javascript" src="https://connect.soundcloud.com/sdk/sdk-3.0.0.js"></script>
+    <script type="text/javascript" src="js/_OBJECTS.js"></script>
+    <script type="text/javascript" src="js/_MAIN.js"></script>
+    <script type="text/javascript" src="js/_SOUNDCLOUD.js"></script>
+    <script type="text/javascript" src="js/_INTERACTION.js"></script>
+    <script type="text/javascript" src="js/_TWEENS.js"></script>
+
+
+
+    <!--<link rel="icon" type="image/png" href="favicon.ico">
+    <link rel="image_src" type="image/png" href="thumb.jpg">
+
+    <meta property="og:url" content="http://unseen-music.com/yume/"/>
+    <meta property="og:title" content="YUME"/>
+    <meta property="og:description" content="Interactive music exploration, Yume by Helios."/>
+    <meta property="og:image" content="http://unseen-music.com/yume/thumb.jpg"/>
+    <meta property="og:image" content="http://unseen-music.com/yume/thumb2.jpg"/>-->
+
+
+</head>
+<body onload="Init()" class="page page-id-45 page-template-default ascend wpb-js-composer js-comp-ver-4.7.4 vc_responsive">
+
+<div id="ajax-content-wrap" class="at-content">
+    <div class="container-wrap temp-bg" style="opacity: 1;">
+        <div class="container main-content">
+
+            <div id="sc-library">
+
+                <div class="sc-wrap sc-single">
+                    <div id="sc-filters">
+                        <h3>Style</h3>
+                        <div id="sc-filter-style">
+                            <div id="sc-filter-style-inner">
+
+                            </div>
+                        </div>
+
+                        <h3>Speed</h3>
+                        <div id="sc-filter-tempo" class="sc-range-slider"><div
+                                class="sc-range-track"></div><div
+                                class="sc-range-color sc-stripe-4"></div><div
+                                id="sc-tempo-handle-1" class="sc-slider-handle">
+                            <SVG width="40" height ="40">
+                                <path d="M21 1 L39 19 Q40 20 39 21 L21 39 Q20 40 19 39 L 1 21 Q0 20 1 19 L19 1 Q20 0 21 1 z" fill="currentColor"></path>
+                                <path d="M22 16 L18 20 L22 24" stroke="white" stroke-width="2" fill="none"></path>
+                            </SVG>
+                        </div><div
+                                id="sc-tempo-handle-2" class="sc-slider-handle">
+                            <SVG width="40" height ="40">
+                                <path d="M21 1 L39 19 Q40 20 39 21 L21 39 Q20 40 19 39 L 1 21 Q0 20 1 19 L19 1 Q20 0 21 1 z" fill="currentColor"></path>
+                                <path d="M18 16 L22 20 L18 24" stroke="white" stroke-width="2" fill="none"></path>
+                            </SVG>
+                        </div><span class="sc-slider-label">
+                        </span>
+                        </div>
+
+                        <h3>Length</h3>
+                        <div id="sc-filter-duration" class="sc-range-slider"><div
+                                class="sc-range-track"></div><div
+                                class="sc-range-color sc-stripe-4"></div><div
+                                id="sc-duration-handle-1" class="sc-slider-handle">
+                            <SVG width="40" height ="40">
+                                <path d="M21 1 L39 19 Q40 20 39 21 L21 39 Q20 40 19 39 L 1 21 Q0 20 1 19 L19 1 Q20 0 21 1 z" fill="currentColor"></path>
+                                <path d="M22 16 L18 20 L22 24" stroke="white" stroke-width="2" fill="none"></path>
+                            </SVG>
+                        </div><div
+                                id="sc-duration-handle-2" class="sc-slider-handle">
+                            <SVG width="40" height ="40">
+                                <path d="M21 1 L39 19 Q40 20 39 21 L21 39 Q20 40 19 39 L 1 21 Q0 20 1 19 L19 1 Q20 0 21 1 z" fill="currentColor"></path>
+                                <path d="M18 16 L22 20 L18 24" stroke="white" stroke-width="2" fill="none"></path>
+                            </SVG>
+                        </div><span class="sc-slider-label">
+                        </span>
+                        </div>
+
+                        <h3>Keywords</h3>
+                        <div id="sc-filter-search">
+                            <form onsubmit="return false;">
+                                <input type="text" id="sc-search-input" name="sc-search" autocomplete="off" spellcheck="false" maxlength="100" value="">
+                            </form>
+                        </div>
+
+                        <div id="sc-reset" class="sc-button sc-button-reset">Reset Filters</div>
+
+                    </div>
+                </div><div class="sc-wrap sc-double">
+                    <h3>Tracks</h3>
+                    <div id="sc-results">
+                        <span id="sc-result-count"></span>
+                        <div id="sc-results-none"></div>
+
+
+                    </div>
+                </div>
+
+                <div id="sc-player">
+                    <audio id="sc-player-audio" autoplay="true">
+                        <source id="sc-player-source" type="audio/mpeg">
+                    </audio>
+
+                    <div id="sc-player-controls" >
+                        <div id="sc-player-prev" class="sc-player-control sc-roll">
+                            <SVG width="30" height ="30">
+                                <polygon points="22,6 8,15 22,24" fill="currentColor"></polygon>
+                                <path d="M8 6 L8 24" stroke="currentColor" stroke-width="2" fill="none"></path>
+                            </SVG>
+                        </div>
+
+                        <div id="sc-player-icon" class="sc-player-control sc-roll">
+                            <SVG width="30" height ="30">
+                                <polygon id="sc-player-icon-polygon" points="4,1 26,15 4,29" fill="currentColor"></polygon>
+                            </SVG>
+                        </div>
+
+                        <div id="sc-player-next" class="sc-player-control sc-roll">
+                            <SVG width="30" height ="30">
+                                <polygon points="8,6 22,15 8,24" fill="currentColor"></polygon>
+                                <path d="M22 6 L22 24" stroke="currentColor" stroke-width="2" fill="none"></path>
+                            </SVG>
+                        </div>
+
+
+                        <div id="sc-player-time" class="sc-player-control sc-text-number">
+                            0:00
+                        </div>
+
+
+                        <div id="sc-player-volume" class="sc-player-control sc-roll">
+                            <SVG width="30" height ="30">
+                                <path d="M6 19.5 L6 24 M12 15 L12 24 M18 10.5 L18 24 M24 6 L24 24" stroke="currentColor" stroke-width="2" fill="none"></path>
+                            </SVG>
+
+                            <div id="sc-player-volume-slider"><div
+                                    class="sc-volume-track"></div><div
+                                    id="sc-player-volume-slider-handle" class="sc-volume-handle">
+                                    <SVG width="20" height ="20">
+                                        <path d="M11 1 L19 9 Q20 10 19 11 L11 19 Q10 20 9 19 L 1 11 Q0 10 1 9 L9 1 Q10 0 11 1 z" fill="currentColor"></path>
+                                    </SVG>
+                                    </div>
+                            </div>
+                        </div>
+
+                        <div id="sc-player-title" class="sc-player-control sc-text-number">
+                            [Orchestral / Uplifting / Playful] - Goldengrove (Extended)
+                        </div>
+
+                    </div>
+
+                    <div id="sc-playlist-display">
+                        <div id="sc-playlist-status" class="sc-playlist-display sc-text-number">
+                            1/1
+                        </div>
+                        <div id="sc-playlist-button" class="sc-button sc-playlist-display sc-text-number">
+                            Open Playlist
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div id="sc-playlist">
+                    <h3>Playlist</h3>
+                    <div id="sc-playlist-scroller">
+                        <div id="sc-playlist-container"></div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>

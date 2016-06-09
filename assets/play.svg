@@ -1,0 +1,8 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+        "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="20" height="20" color="currentColor" xmlns="http://www.w3.org/2000/svg" version="1.1">
+
+    <path d="M 3 1 L 17 10 L 3 19 z"
+          color="currentColor" fill="currentColor" />
+</svg>

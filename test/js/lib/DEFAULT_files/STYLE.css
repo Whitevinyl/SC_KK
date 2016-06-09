@@ -1,0 +1,295 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.temp-bg {
+    background-color: #fffff7 !important;
+}
+
+/*
+-------------------------------------------------------------------------------------------
+  GENERIC STYLES
+-------------------------------------------------------------------------------------------
+*/
+
+#sc-library h3 {
+    text-transform: uppercase;
+    font: 700 12px 'Karla', sans-serif;
+    line-height: 20px;
+    letter-spacing: 1px;
+    color: #111111;
+    margin: 30px 0 0 0;
+    padding: 0;
+}
+
+.sc-roll {
+    -webkit-transition: color 0.4s;
+    transition: color 0.4s;
+}
+
+.sc-roll:hover {
+    cursor: pointer;
+    color: #52c9cd;
+}
+
+.sc-text-track {
+    font: 600 14px 'Open Sans', sans-serif;
+    color: #000000;
+}
+
+.sc-text-number {
+    font: 400 14px 'Open Sans', sans-serif;
+    color: #000000;
+}
+
+.sc-svg {
+    width: 20px;
+    height: 20px;
+}
+
+/*
+-------------------------------------------------------------------------------------------
+  STRUCTURE
+-------------------------------------------------------------------------------------------
+*/
+
+#sc-library {
+    position: relative;
+}
+
+#sc-filters {
+    min-height: 20px;
+}
+
+#sc-results {
+    width: 100%;
+    margin-top: 15px;
+    min-height: 20px;
+    border-bottom: 2px solid #e0e0e1;
+}
+
+.sc-wrap {
+    vertical-align: top;
+    display: inline-block;
+    padding: 0 2% 0 2%;
+}
+
+.sc-single {
+    width: 29.3%;
+}
+
+.sc-double {
+    width: 62.3%;
+}
+
+/*
+-------------------------------------------------------------------------------------------
+  FILTERS SECTION
+-------------------------------------------------------------------------------------------
+*/
+
+/* Select Style */
+#sc-filter-style {
+    margin-top: 5px;
+    font: 400 23px 'Lora', serif;
+    line-height: 30px;
+    color: #000000;
+    overflow: hidden;
+}
+
+#sc-filter-style-inner {
+    margin-left: -11px;
+}
+
+#sc-filter-style-inner div {
+    padding-left: 10px;
+    margin: 8px 10px 12px 0;
+    border-left: 2px solid #e0e0e1;
+    display: inline-block;
+    height: 16px;
+}
+
+#sc-filter-style span {
+    display: inline-block;
+    margin: -8px 0 4px 0;
+}
+
+.sc-filter-style-underline {
+    border-bottom: 2px solid;
+    margin-bottom: 0 !important;
+}
+
+#sc-filter-tempo {
+
+}
+
+.sc-range-slider {
+    height: 40px;
+    position: relative;
+}
+
+.sc-range-track {
+    height: 19px;
+    border-bottom: 2px solid #575757;
+}
+
+.sc-slider-handle {
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    top: 0;
+    background-color: #000000;
+    -webkit-transition: background-color 0.4s;
+    transition: background-color 0.4s;
+}
+
+.sc-slider-handle:hover {
+    cursor: pointer;
+    background-color: #52c9cd;
+}
+
+
+/* Reset Button */
+.sc-button {
+    margin: 30px 0 0 0;
+    height: 20px;
+    padding: 8px 33px 8px 33px;
+    display: inline-block;
+
+    text-transform: uppercase;
+    font: 400 11px 'Open Sans', sans-serif;
+    line-height: 20px;
+    letter-spacing: 2px;
+    color: #111111;
+
+    border: 2px solid #575757;
+    background-color: transparent;
+
+    -webkit-transition: background-color, color, border 0.4s;
+    transition: background-color, color, border 0.4s;
+}
+
+.sc-button:hover {
+    cursor: pointer;
+    background-color: #52c9cd;
+    border-color: #52c9cd;
+    color: #fff;
+}
+
+/*
+-------------------------------------------------------------------------------------------
+  TRACKS SECTION
+-------------------------------------------------------------------------------------------
+*/
+
+.sc-track-container {
+    opacity: 0;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+    position: relative;
+    height: 60px;
+    border-top: 2px solid #e0e0e1;
+}
+
+.sc-track-button {
+    display: inline-block;
+    padding: 20px;
+    margin-left: -20px;
+    width: 20px;
+    height: 20px;
+    color: #000000;
+}
+
+.sc-track-title {
+    vertical-align: top;
+    display: inline-block;
+    padding: 20px 0 20px 0;
+    margin-left: 10px;
+    line-height: 20px;
+    width: 65%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.sc-track-duration {
+    position: absolute;
+    right: 70px;
+    vertical-align: top;
+    display: inline-block;
+    padding: 20px 0 20px 0;
+    line-height: 20px;
+    width: 10%;
+}
+.sc-track-add {
+    position: absolute;
+    right: 10px;
+    vertical-align: top;
+    display: inline-block;
+    padding: 20px;
+    height: 20px;
+    width: 20px;
+    color: #000000;
+}
+
+
+/*
+-------------------------------------------------------------------------------------------
+  KEYFRAMES
+-------------------------------------------------------------------------------------------
+*/
+
+
+@keyframes sc-fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes sc-fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes sc-fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes sc-fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes sc-fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+/*
+-------------------------------------------------------------------------------------------
+  RESPONSIVE
+-------------------------------------------------------------------------------------------
+*/
+
+@media (max-width:800px) {
+    .sc-wrap, .sc-single, .sc-double {
+        width: 96%;
+    }
+    .sc-track-title {
+        width: 60%;
+        margin-left: 0;
+    }
+    .sc-text-track, .sc-text-number {
+        font-size: 11px;
+    }
+    .sc-track-duration {
+        right: 50px;
+    }
+    .sc-track-add {
+        right: 0;
+    }
+}

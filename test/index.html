@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+
+    <title>DEFAULT</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="robots" content="noodp,noydir" />
+    <meta name="keywords" content=""  />
+
+    <!--<script type="text/javascript" src="js/lib/tween.min.js"></script>-->
+    <!--<script type="text/javascript" src="js/lib/Tone.min.js"></script>-->
+    <!--<script type="text/javascript" src="js/lib/three.min.js"></script>-->
+    <!--<script type="text/javascript" src="js/lib/PixelPalette.js"></script>-->
+
+    <!--
+    <script type="text/javascript" src="js/_MAIN.js"></script>
+    <script type="text/javascript" src="js/_METRICS.js"></script>
+    <script type="text/javascript" src="js/_INTERACTION.js"></script>
+    <script type="text/javascript" src="js/_DRAW.js"></script>
+    <script type="text/javascript" src="js/_TWEENS.js"></script>
+    <script type="text/javascript" src="js/_FONTS.js"></script>-->
+
+    <link href="STYLE.css" rel="stylesheet" type="text/css" />
+    <link href="_style.css" rel="stylesheet" type="text/css" />
+    <link href="js/lib/rangeslider.css" rel="stylesheet" type="text/css" />
+
+    <link href='https://fonts.googleapis.com/css?family=Karla:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+
+    <!--<script src="js/lib/jquery-2.2.3.min.js"></script>
+    <script src="js/lib/rangeslider.min.js"></script>
+    <script>
+        // Initialize a new plugin instance for all
+        // e.g. $('input[type="range"]') elements.
+        $('input[type="range"]').rangeslider();
+
+        // Destroy all plugin instances created from the
+        // e.g. $('input[type="range"]') elements.
+        $('input[type="range"]').rangeslider('destroy');
+
+        // Update all rangeslider instances for all
+        // e.g. $('input[type="range"]') elements.
+        // Usefull if you changed some attributes e.g. `min` or `max` etc.
+        $('input[type="range"]').rangeslider('update', true);
+    </script>-->
+
+    <script type="text/javascript" src="https://connect.soundcloud.com/sdk/sdk-3.0.0.js"></script>
+    <script type="text/javascript" src="js/_OBJECTS.js"></script>
+    <script type="text/javascript" src="js/_MAIN.js"></script>
+    <script type="text/javascript" src="js/_SOUNDCLOUD.js"></script>
+    <script type="text/javascript" src="js/_INTERACTION.js"></script>
+
+
+
+
+    <!--<link rel="icon" type="image/png" href="favicon.ico">
+    <link rel="image_src" type="image/png" href="thumb.jpg">
+
+    <meta property="og:url" content="http://unseen-music.com/yume/"/>
+    <meta property="og:title" content="YUME"/>
+    <meta property="og:description" content="Interactive music exploration, Yume by Helios."/>
+    <meta property="og:image" content="http://unseen-music.com/yume/thumb.jpg"/>
+    <meta property="og:image" content="http://unseen-music.com/yume/thumb2.jpg"/>-->
+
+
+</head>
+<body onload="Init()" class="page page-id-45 page-template-default ascend wpb-js-composer js-comp-ver-4.7.4 vc_responsive">
+
+<div id="ajax-content-wrap" class="at-content">
+    <div class="container-wrap temp-bg" style="opacity: 1;">
+        <div class="container main-content">
+
+            <div id="sc-library">
+
+                <div class="sc-wrap sc-single">
+                    <div id="sc-filters">
+                        <h3>Style</h3>
+                        <div id="sc-filter-style">
+                            <div id="sc-filter-style-inner">
+
+                            </div>
+                        </div>
+
+                        <h3>Speed</h3>
+                        <div id="sc-filter-tempo" class="sc-range-slider"><div
+                                class="sc-range-track"></div><div
+                                class="sc-range-color"></div><div
+                                id="sc-tempo-handle-1" class="sc-slider-handle">
+                            <SVG width="40" height ="40">
+                                <path d="M21 1 L39 19 Q40 20 39 21 L21 39 Q20 40 19 39 L 1 21 Q0 20 1 19 L19 1 Q20 0 21 1 z" fill="currentColor"></path>
+                                <path d="M22 16 L18 20 L22 24" stroke="white" stroke-width="2" fill="none"></path>
+                            </SVG>
+                        </div><div
+                                id="sc-tempo-handle-2" class="sc-slider-handle">
+                            <SVG width="40" height ="40">
+                                <path d="M21 1 L39 19 Q40 20 39 21 L21 39 Q20 40 19 39 L 1 21 Q0 20 1 19 L19 1 Q20 0 21 1 z" fill="currentColor"></path>
+                                <path d="M18 16 L22 20 L18 24" stroke="white" stroke-width="2" fill="none"></path>
+                            </SVG>
+                        </div><span class="sc-slider-label">
+                        </span>
+                        </div>
+
+                        <h3>Length</h3>
+                        <div id="sc-filter-duration" class="sc-range-slider"><div
+                                class="sc-range-track"></div><div
+                                class="sc-range-color"></div><div
+                                id="sc-duration-handle-1" class="sc-slider-handle">
+                            <SVG width="40" height ="40">
+                                <path d="M21 1 L39 19 Q40 20 39 21 L21 39 Q20 40 19 39 L 1 21 Q0 20 1 19 L19 1 Q20 0 21 1 z" fill="currentColor"></path>
+                                <path d="M22 16 L18 20 L22 24" stroke="white" stroke-width="2" fill="none"></path>
+                            </SVG>
+                        </div><div
+                                id="sc-duration-handle-2" class="sc-slider-handle">
+                            <SVG width="40" height ="40">
+                                <path d="M21 1 L39 19 Q40 20 39 21 L21 39 Q20 40 19 39 L 1 21 Q0 20 1 19 L19 1 Q20 0 21 1 z" fill="currentColor"></path>
+                                <path d="M18 16 L22 20 L18 24" stroke="white" stroke-width="2" fill="none"></path>
+                            </SVG>
+                        </div><span class="sc-slider-label">
+                        </span>
+                        </div>
+
+                        <h3>Keywords</h3>
+                        <div id="sc-filter-search">
+                            <form onsubmit="return false;">
+                                <input type="text" id="sc-search-input" name="sc-search" autocomplete="off" spellcheck="false" maxlength="100" value="">
+                            </form>
+                        </div>
+
+                        <div id="sc-reset" class="sc-button">Reset Filters</div>
+
+                    </div>
+                </div><div class="sc-wrap sc-double">
+                    <h3>Tracks</h3>
+                    <div id="sc-results">
+                        <span id="sc-result-count"></span>
+                        <div id="sc-results-none"></div>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
